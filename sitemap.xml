@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://naeeminsight.me/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://naeeminsight.me/assets/naeemhossen1.jpg</image:loc>
+      <image:title>Naeem Hossen photo 1</image:title>
+      <image:caption>Naeem Hossen, SEO expert and web designer from Manikganj, Bangladesh</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.me/assets/naeemhossen2.jpg</image:loc>
+      <image:title>Naeem Hossen photo 2</image:title>
+      <image:caption>Naeem Hossen of Naeem Insight, digital marketing specialist</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.me/assets/naeemhossen3.jpg</image:loc>
+      <image:title>Naeem Hossen photo 3</image:title>
+      <image:caption>Naeem Hossen, IT Executive at Agamir Shomoy</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.me/assets/naeemhossen4.jpg</image:loc>
+      <image:title>Naeem Hossen photo 4</image:title>
+      <image:caption>Naeem Hossen, Publisher and Editor of Nikhut Barta</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.me/assets/naeemhossen5.jpg</image:loc>
+      <image:title>Naeem Hossen photo 5</image:title>
+      <image:caption>Naeem Hossen, digital marketer and web designer in Bangladesh</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.me/assets/naeemhossen6.jpg</image:loc>
+      <image:title>Naeem Hossen photo 6</image:title>
+      <image:caption>Naeem Hossen, founder of Naeem Insight</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.me/assets/naeemhossen7.jpg</image:loc>
+      <image:title>Naeem Hossen photo 7</image:title>
+      <image:caption>Naeem Hossen, CSE student at Uttara University</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.me/assets/naeemhossen8.jpg</image:loc>
+      <image:title>Naeem Hossen photo 8</image:title>
+      <image:caption>Naeem Hossen, web developer and IT professional from Manikganj</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.me/assets/naeemhossen9.jpg</image:loc>
+      <image:title>Naeem Hossen photo 9</image:title>
+      <image:caption>Naeem Hossen, SEO and digital marketing specialist, portrait</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.me/assets/naeemhossen10.jpg</image:loc>
+      <image:title>Naeem Hossen photo 10</image:title>
+      <image:caption>Naeem Hossen, Naeem Insight official photo</image:caption>
+    </image:image>
+  </url>
+</urlset>
