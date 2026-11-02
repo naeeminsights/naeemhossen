@@ -28,8 +28,9 @@
 <meta property="og:title" content="Naeem Hossen | SEO Expert &amp; Web Designer in Manikganj">
 <meta property="og:description" content="SEO, digital marketing and websites for businesses in Manikganj and across Bangladesh.">
 <meta property="og:url" content="https://naeeminsight.me/">
-<meta property="og:image" content="https://naeeminsight.me/assets/og-image.jpg">
+<meta property="og:image" content="https://naeeminsight.me/assets/naeemhossen1.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://naeeminsight.me/assets/naeemhossen1.jpg">
 
 <!-- Website Logo for Google Search and Browser Tab -->
 <link rel="icon" href="assets/naeemic.jpg" type="image/jpeg">
@@ -38,6 +39,48 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Hind+Siliguri:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- Structured data: tells Google these photos belong to Naeem Hossen -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://naeeminsight.me/#person",
+      "name": "Naeem Hossen",
+      "alternateName": "Naeem Insight",
+      "url": "https://naeeminsight.me/",
+      "image": "https://naeeminsight.me/assets/naeemhossen1.jpg",
+      "jobTitle": "SEO Expert & Web Designer",
+      "sameAs": [
+        "https://www.facebook.com/naeemhossen.me/",
+        "https://www.linkedin.com/in/naeeminsight/",
+        "https://github.com/naeeminsights",
+        "https://naeeminsight.vercel.app/"
+      ]
+    },
+    {
+      "@type": "ImageGallery",
+      "name": "Naeem Hossen Photos",
+      "url": "https://naeeminsight.me/#photos",
+      "about": { "@id": "https://naeeminsight.me/#person" },
+      "image": [
+        { "@type": "ImageObject", "contentUrl": "https://naeeminsight.me/assets/naeemhossen1.jpg", "name": "Naeem Hossen photo 1", "caption": "Naeem Hossen, SEO expert and web designer from Manikganj, Bangladesh" },
+        { "@type": "ImageObject", "contentUrl": "https://naeeminsight.me/assets/naeemhossen2.jpg", "name": "Naeem Hossen photo 2", "caption": "Naeem Hossen of Naeem Insight, digital marketing specialist" },
+        { "@type": "ImageObject", "contentUrl": "https://naeeminsight.me/assets/naeemhossen3.jpg", "name": "Naeem Hossen photo 3", "caption": "Naeem Hossen, IT Executive at Agamir Shomoy" },
+        { "@type": "ImageObject", "contentUrl": "https://naeeminsight.me/assets/naeemhossen4.jpg", "name": "Naeem Hossen photo 4", "caption": "Naeem Hossen, Publisher and Editor of Nikhut Barta" },
+        { "@type": "ImageObject", "contentUrl": "https://naeeminsight.me/assets/naeemhossen5.jpg", "name": "Naeem Hossen photo 5", "caption": "Naeem Hossen, digital marketer and web designer in Bangladesh" },
+        { "@type": "ImageObject", "contentUrl": "https://naeeminsight.me/assets/naeemhossen6.jpg", "name": "Naeem Hossen photo 6", "caption": "Naeem Hossen, founder of Naeem Insight" },
+        { "@type": "ImageObject", "contentUrl": "https://naeeminsight.me/assets/naeemhossen7.jpg", "name": "Naeem Hossen photo 7", "caption": "Naeem Hossen, CSE student at Uttara University" },
+        { "@type": "ImageObject", "contentUrl": "https://naeeminsight.me/assets/naeemhossen8.jpg", "name": "Naeem Hossen photo 8", "caption": "Naeem Hossen, web developer and IT professional from Manikganj" },
+        { "@type": "ImageObject", "contentUrl": "https://naeeminsight.me/assets/naeemhossen9.jpg", "name": "Naeem Hossen photo 9", "caption": "Naeem Hossen, SEO and digital marketing specialist, portrait" },
+        { "@type": "ImageObject", "contentUrl": "https://naeeminsight.me/assets/naeemhossen10.jpg", "name": "Naeem Hossen photo 10", "caption": "Naeem Hossen, Naeem Insight official photo" }
+      ]
+    }
+  ]
+}
+</script>
 
 <style>
 :root{
@@ -132,6 +175,26 @@ h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.035em;line-height:1.1}
 .wk h3{font-size:32px;margin-bottom:16px;}
 .wk p{color:var(--mut);font-size:16px; margin-bottom:24px;}
 
+/* Hidden photo gallery (collapsed by default, still crawlable by Google) */
+.photos{max-width:900px;margin:32px auto 0;text-align:center}
+.photos summary{
+  display:inline-flex;align-items:center;gap:8px;list-style:none;cursor:pointer;
+  height:34px;padding:0 14px;border-radius:999px;border:1px solid var(--b1);
+  background:transparent;color:var(--dim);font-size:13px;transition:all .2s;
+}
+.photos summary::-webkit-details-marker{display:none}
+.photos summary:hover,.photos[open] summary{color:var(--blue);border-color:var(--blue);background:rgba(56,189,248,0.06)}
+.photos summary svg{width:15px;height:15px}
+.photos .gallery{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;
+  margin-top:24px;text-align:left;
+}
+.photos figure{margin:0;border:1px solid var(--b1);border-radius:14px;overflow:hidden;background:var(--s1);transition:transform .3s,border-color .3s}
+.photos figure:hover{transform:translateY(-4px);border-color:var(--blue)}
+.photos figure a{display:block}
+.photos img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--s2)}
+.photos figcaption{padding:10px 12px;font-size:12.5px;color:var(--mut)}
+
 @media (max-width:960px){
   .wk{grid-template-columns:1fr;}
   .wk .im{height:250px;}
@@ -174,9 +237,9 @@ h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.035em;line-height:1.1}
     </div>
 
     <div class="socials">
-      <a class="soc" href="https://www.facebook.com/naeemhossen.me/" target="_blank">Facebook</a>
-      <a class="soc" href="https://www.linkedin.com/in/naeeminsight/" target="_blank">LinkedIn</a>
-      <a class="soc" href="https://github.com/naeeminsights" target="_blank">GitHub</a>
+      <a class="soc" href="https://www.facebook.com/naeemhossen.me/" target="_blank" rel="noopener">Facebook</a>
+      <a class="soc" href="https://www.linkedin.com/in/naeeminsight/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="soc" href="https://github.com/naeeminsights" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </section>
@@ -219,7 +282,7 @@ h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.035em;line-height:1.1}
     <div class="works">
       
       <article class="wk">
-        <div class="im"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80" alt="SEO Projects Analytics"></div>
+        <div class="im"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=80" alt="SEO Projects Analytics" loading="lazy"></div>
         <div class="bd">
           <p class="cat">Search Engine Optimization</p>
           <h3>Extensive SEO Portfolio</h3>
@@ -229,7 +292,7 @@ h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.035em;line-height:1.1}
       </article>
 
       <article class="wk">
-        <div class="im"><img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=900&q=80" alt="Newsroom technology"></div>
+        <div class="im"><img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=900&q=80" alt="Newsroom technology" loading="lazy"></div>
         <div class="bd">
           <p class="cat">IT Operations & Media</p>
           <h3>Agamir Shomoy & Nikhut Barta</h3>
@@ -269,15 +332,103 @@ h1,h2,h3,h4{margin:0;font-weight:600;letter-spacing:-.035em;line-height:1.1}
     </div>
   </div>
 </section>
+</main>
 
 <footer style="border-top:1px solid var(--b1); padding: 40px 0; text-align:center; margin-top:50px;">
   <div class="wrap">
     <h2 style="margin-bottom:16px;">Naeem Hossen</h2>
     <p style="color:var(--mut); margin-bottom: 24px;">Explore my complete background and projects on my main website.</p>
     <a href="https://naeeminsight.vercel.app/" class="btn btn-main">Visit naeeminsight.vercel.app</a>
+
+    <!-- HIDDEN PHOTO GALLERY: closed by default, opens on click or at naeeminsight.me/#photos -->
+    <details class="photos" id="photos">
+      <summary>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        Photos of Naeem Hossen
+      </summary>
+      <div class="gallery">
+        <figure>
+          <a href="assets/naeemhossen1.jpg" target="_blank" rel="noopener">
+            <img src="assets/naeemhossen1.jpg" alt="Naeem Hossen, SEO expert and web designer from Manikganj, Bangladesh" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Naeem Hossen, SEO Expert</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/naeemhossen2.jpg" target="_blank" rel="noopener">
+            <img src="assets/naeemhossen2.jpg" alt="Naeem Hossen of Naeem Insight, digital marketing specialist" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Naeem Hossen, Naeem Insight</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/naeemhossen3.jpg" target="_blank" rel="noopener">
+            <img src="assets/naeemhossen3.jpg" alt="Naeem Hossen, IT Executive at Agamir Shomoy" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Naeem Hossen, IT Executive</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/naeemhossen4.jpg" target="_blank" rel="noopener">
+            <img src="assets/naeemhossen4.jpg" alt="Naeem Hossen, Publisher and Editor of Nikhut Barta" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Naeem Hossen, Publisher of Nikhut Barta</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/naeemhossen5.jpg" target="_blank" rel="noopener">
+            <img src="assets/naeemhossen5.jpg" alt="Naeem Hossen, digital marketer and web designer in Bangladesh" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Naeem Hossen, Digital Marketer</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/naeemhossen6.jpg" target="_blank" rel="noopener">
+            <img src="assets/naeemhossen6.jpg" alt="Naeem Hossen, founder of Naeem Insight" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Naeem Hossen, Founder of Naeem Insight</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/naeemhossen7.jpg" target="_blank" rel="noopener">
+            <img src="assets/naeemhossen7.jpg" alt="Naeem Hossen, CSE student at Uttara University" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Naeem Hossen, CSE Student</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/naeemhossen8.jpg" target="_blank" rel="noopener">
+            <img src="assets/naeemhossen8.jpg" alt="Naeem Hossen, web developer and IT professional from Manikganj" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Naeem Hossen, Web Developer</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/naeemhossen9.jpg" target="_blank" rel="noopener">
+            <img src="assets/naeemhossen9.jpg" alt="Naeem Hossen, SEO and digital marketing specialist, portrait" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Naeem Hossen, Portrait</figcaption>
+        </figure>
+        <figure>
+          <a href="assets/naeemhossen10.jpg" target="_blank" rel="noopener">
+            <img src="assets/naeemhossen10.jpg" alt="Naeem Hossen, Naeem Insight official photo" width="800" height="1000" loading="lazy" decoding="async">
+          </a>
+          <figcaption>Naeem Hossen, Official Photo</figcaption>
+        </figure>
+        <!-- Total 10 photos: naeemhossen1.jpg to naeemhossen10.jpg. Fewer? Delete the extra <figure> blocks. -->
+      </div>
+    </details>
+
     <p style="margin-top:40px; color:var(--dim); font-size:14px;">&copy; 2026 Naeem Hossen (Naeem Insight). All rights reserved.</p>
   </div>
 </footer>
+
+<script>
+// Open the hidden gallery when someone visits naeeminsight.me/#photos
+(function(){
+  var d = document.getElementById('photos');
+  function check(){
+    if (location.hash === '#photos' && d) {
+      d.open = true;
+      d.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  }
+  check();
+  window.addEventListener('hashchange', check);
+})();
+</script>
 
 </body>
 </html>
