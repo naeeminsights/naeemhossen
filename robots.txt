@@ -1,4 +1,6 @@
+# Put this file in the ROOT repo "naeeminsights.github.io" (not in the naeemhossen repo),
+# so it is served at https://naeeminsights.github.io/robots.txt
 User-agent: *
 Allow: /
 
-Sitemap: https://naeeminsight.me/sitemap.xml
+Sitemap: https://naeeminsights.github.io/naeemhossen/sitemap.xml
