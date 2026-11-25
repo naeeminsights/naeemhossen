@@ -2,17 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://naeeminsights.github.io/naeemhossen/</loc>
-    <lastmod>2026-11-24</lastmod>
-    <image:image><image:loc>https://naeeminsights.github.io/naeemhossen/assets/naeemhossen1.jpg</image:loc></image:image>
-    <image:image><image:loc>https://naeeminsights.github.io/naeemhossen/assets/naeemhossen2.jpg</image:loc></image:image>
-    <image:image><image:loc>https://naeeminsights.github.io/naeemhossen/assets/naeemhossen3.jpg</image:loc></image:image>
-    <image:image><image:loc>https://naeeminsights.github.io/naeemhossen/assets/naeemhossen4.jpg</image:loc></image:image>
-    <image:image><image:loc>https://naeeminsights.github.io/naeemhossen/assets/naeemhossen5.jpg</image:loc></image:image>
-    <image:image><image:loc>https://naeeminsights.github.io/naeemhossen/assets/naeemhossen6.jpg</image:loc></image:image>
-    <image:image><image:loc>https://naeeminsights.github.io/naeemhossen/assets/naeemhossen7.jpg</image:loc></image:image>
-    <image:image><image:loc>https://naeeminsights.github.io/naeemhossen/assets/naeemhossen8.jpg</image:loc></image:image>
-    <image:image><image:loc>https://naeeminsights.github.io/naeemhossen/assets/naeemhossen9.jpg</image:loc></image:image>
-    <image:image><image:loc>https://naeeminsights.github.io/naeemhossen/assets/naeemhossen10.jpg</image:loc></image:image>
+    <loc>https://naeeminsight.vercel.app/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/naeem.jpg</image:loc>
+      <image:title>Naeem Hossen - IT Executive, Web Developer and SEO Specialist</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/naeem2.jpg</image:loc>
+      <image:title>Naeem Hossen (Naeem Insight)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/assets/naeemhossen1.jpg</image:loc>
+      <image:title>Naeem Hossen, SEO Expert</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/assets/naeemhossen2.jpg</image:loc>
+      <image:title>Naeem Hossen, Naeem Insight</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/assets/naeemhossen3.jpg</image:loc>
+      <image:title>Naeem Hossen, IT Executive at Agamir Shomoy</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/assets/naeemhossen4.jpg</image:loc>
+      <image:title>Naeem Hossen, Head of Technology and Digital Operations at Nikhut Barta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/assets/naeemhossen5.jpg</image:loc>
+      <image:title>Naeem Hossen, Digital Marketer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/assets/naeemhossen6.jpg</image:loc>
+      <image:title>Naeem Hossen, Founder of Naeem Insight</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/assets/naeemhossen7.jpg</image:loc>
+      <image:title>Naeem Hossen, CSE Student at Uttara University</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/assets/naeemhossen8.jpg</image:loc>
+      <image:title>Naeem Hossen, Web Developer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/assets/naeemhossen9.jpg</image:loc>
+      <image:title>Naeem Hossen, Portrait</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://naeeminsight.vercel.app/assets/naeemhossen10.jpg</image:loc>
+      <image:title>Naeem Hossen, Official Photo</image:title>
+    </image:image>
   </url>
 </urlset>
