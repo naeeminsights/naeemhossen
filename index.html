@@ -30,7 +30,7 @@
 <meta property="og:title" content="Naeem Hossen | Web Developer, SEO Specialist &amp; IT Executive in Bangladesh">
 <meta property="og:description" content="Websites, SEO, digital marketing, IT support and 50+ free online tools from Naeem Hossen in Manikganj, Bangladesh.">
 <meta property="og:url" content="https://naeeminsight.vercel.app/">
-<meta property="og:image" content="https://naeeminsight.vercel.app/naeem.jpg">
+<meta property="og:image" content="https://naeeminsights.github.io/naeemhossen/assets/naeem.jpg">
 <meta property="og:image:width" content="704">
 <meta property="og:image:height" content="880">
 <meta property="og:image:alt" content="Naeem Hossen, web developer, SEO specialist and IT Executive">
@@ -40,13 +40,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Naeem Hossen | Web Developer, SEO Specialist &amp; IT Executive">
 <meta name="twitter:description" content="Websites, SEO, digital marketing, IT support and 50+ free online tools in Bangladesh.">
-<meta name="twitter:image" content="https://naeeminsight.vercel.app/naeem.jpg">
+<meta name="twitter:image" content="https://naeeminsights.github.io/naeemhossen/assets/naeem.jpg">
 <meta name="twitter:image:alt" content="Naeem Hossen, web developer, SEO specialist and IT Executive">
 
-<link rel="preload" as="image" href="naeem.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="assets/naeem.jpg" fetchpriority="high">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-<link rel="icon" type="image/jpeg" href="naeemlogo.jpg">
-<link rel="apple-touch-icon" href="naeemlogo.jpg">
+<link rel="icon" type="image/jpeg" href="assets/naeemic.jpg">
+<link rel="apple-touch-icon" href="assets/naeemic.jpg">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHBJN2VXL8"></script>
@@ -73,8 +73,8 @@
       "image": {
         "@type": "ImageObject",
         "@id": "https://naeeminsight.vercel.app/#primaryimage",
-        "url": "https://naeeminsight.vercel.app/naeem.jpg",
-        "contentUrl": "https://naeeminsight.vercel.app/naeem.jpg",
+        "url": "https://naeeminsights.github.io/naeemhossen/assets/naeem.jpg",
+        "contentUrl": "https://naeeminsights.github.io/naeemhossen/assets/naeem.jpg",
         "width": 704,
         "height": 880,
         "caption": "Naeem Hossen, web developer, SEO specialist and IT Executive"
@@ -224,6 +224,7 @@
   --accent-soft:rgba(184,50,47,.1);
   --red:#B8322F;
   --blue:#2B5FA8;
+  --name:#2B5FA8;
   --glow-a:rgba(184,50,47,.12);
   --glow-b:rgba(34,40,45,.06);
   --glow:rgba(34,40,45,.04);
@@ -250,6 +251,7 @@
   --accent-soft:rgba(224,96,93,.15);
   --red:#B8322F;
   --blue:#2B5FA8;
+  --name:#7FA6E0;
   --glow-a:rgba(184,50,47,.18);
   --glow-b:rgba(243,245,247,.06);
   --glow:rgba(255,254,254,.04);
@@ -345,7 +347,7 @@ section[id]{scroll-margin-top:76px}
 @keyframes ping{0%{transform:scale(.5);opacity:.7}100%{transform:scale(1.6);opacity:0}}
 .hero h1{font-size:clamp(3.6rem,8.2vw,7.6rem);font-weight:900;letter-spacing:-.06em;line-height:.88;margin:26px 0 24px;color:var(--text);padding-bottom:.04em}
 .hero h1 .nm{display:block}
-.hero h1 .nm+.nm{color:#2B5FA8}
+.hero h1 .nm+.nm{color:var(--name)}
 .hero .role{font-size:clamp(1.05rem,1.8vw,1.25rem);font-weight:600;letter-spacing:-.01em}
 .hero .lede{color:var(--muted);font-size:1.05rem;max-width:48ch;margin-top:12px}
 .hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin-top:32px}
@@ -458,7 +460,7 @@ dialog.hub-dlg[open]{display:flex;flex-direction:column;animation:pop .35s var(-
 .hs-card span{font-size:.92rem;color:var(--muted)}
 
 /* Photo Gallery Modal Grid */
-.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-flow:dense;gap:12px}
 .gal-grid figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--surface2);position:relative}
 .gal-grid figure.feat{grid-column:span 2;grid-row:span 2}
 .gal-grid figure a{display:block;height:100%;cursor:zoom-in}
@@ -469,6 +471,8 @@ dialog.hub-dlg[open]{display:flex;flex-direction:column;animation:pop .35s var(-
 .gal-note{margin-top:16px;font-size:.85rem;color:var(--muted);text-align:center}
 
 /* Fullscreen Image Lightbox (on top of gallery modal) */
+dialog.lb{margin:0;border:0;width:100%;height:100%;max-width:none;max-height:none;color:#FFFEFE}
+dialog.lb::backdrop{background:transparent}
 .lb{position:fixed;inset:0;z-index:2000;display:none;flex-direction:column;align-items:center;justify-content:center;padding:64px 16px 24px;background:rgba(10,14,18,.96);backdrop-filter:blur(10px);opacity:0;transition:opacity .25s;touch-action:pan-y}
 .lb.on{display:flex}.lb.show{opacity:1}
 .lb-stage{position:relative;display:flex;align-items:center;justify-content:center;width:100%;flex:1;min-height:0}
@@ -673,6 +677,7 @@ dialog.hub-dlg[open]{display:flex;flex-direction:column;animation:pop .35s var(-
 /* Footer (Matte Black #22282D) */
 .ftr{--text:#FBFAF4;--muted:#B4BCC3;--line:#363E46;padding:64px 0 36px;background:#22282D;color:var(--text);border-top:0}
 .ftr .logo-mark{border-color:#47525C}
+.ftr{--name:#7FA6E0}
 .ftr-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:40px;border-bottom:1px solid var(--line)}
 .ftr p.about-f{color:var(--muted);font-size:.95rem;max-width:40ch;margin-top:16px}
 .ftr .bn{font-family:var(--fbn);color:var(--muted);font-size:.95rem;margin-top:10px}
@@ -807,7 +812,7 @@ dialog.pd[open]{animation:pop .4s var(--ease)}
 
 <header class="hdr" id="hdr">
   <div class="wrap">
-    <a href="#top" class="logo" aria-label="Naeem Hossen, home"><span class="logo-mark" aria-hidden="true"><img src="naeemlogo.jpg" alt="" width="36" height="36" onerror="this.style.display='none'"></span><span>Naeem <span style="color:#2B5FA8">Hossen</span></span></a>
+    <a href="#top" class="logo" aria-label="Naeem Hossen, home"><span class="logo-mark" aria-hidden="true"><img src="assets/naeemic.jpg" alt="" width="36" height="36" onerror="this.style.display='none'"></span><span>Naeem <span style="color:var(--name)">Hossen</span></span></a>
     <nav class="nav" aria-label="Main">
       <a href="#services">Skills</a>
       <a href="#explore">Tools &amp; Photos</a>
@@ -865,7 +870,7 @@ dialog.pd[open]{animation:pop .4s var(--ease)}
       </div>
       <div class="hero-visual arch">
         <div class="arch-frame">
-          <img src="naeem.jpg" alt="Naeem Hossen, IT Executive, web developer and SEO specialist from Manikganj, Bangladesh" width="704" height="880" fetchpriority="high" decoding="async" onerror="this.style.display='none'">
+          <img src="assets/naeem.jpg" alt="Naeem Hossen, IT Executive, web developer and SEO specialist from Manikganj, Bangladesh" width="704" height="880" fetchpriority="high" decoding="async" onerror="this.style.display='none'">
         </div>
         <div class="arch-card top-r">
           <span class="gi" style="background:rgba(43,95,168,.12);color:#2B5FA8" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
@@ -977,8 +982,8 @@ dialog.pd[open]{animation:pop .4s var(--ease)}
             <h3>Photo Gallery</h3>
             <p>Official portraits and work photos of Naeem Hossen (Naeem Insight) from Manikganj &amp; Dhaka.</p>
             <div class="hub-thumbs" aria-hidden="true">
-              <img src="assets/naeemhossen1.jpg" alt="" onerror="this.src='naeem.jpg'">
-              <img src="assets/naeemhossen2.jpg" alt="" onerror="this.src='naeem2.jpg'">
+              <img src="assets/naeemhossen1.jpg" alt="" onerror="this.onerror=null;this.src='assets/naeem.jpg'">
+              <img src="assets/naeemhossen2.jpg" alt="" onerror="this.onerror=null;this.src='assets/naeem2.jpg'">
               <img src="assets/naeemhossen3.jpg" alt="" onerror="this.style.display='none'">
               <img src="assets/naeemhossen4.jpg" alt="" onerror="this.style.display='none'">
               <span>+6 more</span>
@@ -1149,7 +1154,7 @@ dialog.pd[open]{animation:pop .4s var(--ease)}
     </div>
 
     <button type="button" class="feature glow rv" data-open-dlg="pd" aria-haspopup="dialog">
-      <div class="feature-img"><img src="nikhutbarta.jpg" alt="নিখুঁত বার্তা (Nikhut Barta) Bangla news portal homepage" width="1600" height="900" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
+      <div class="feature-img"><img src="assets/nikhutbarta.jpg" alt="নিখুঁত বার্তা (Nikhut Barta) Bangla news portal homepage" width="1600" height="900" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
       <div class="feature-body">
         <span class="proj-badge"><span class="dot" aria-hidden="true"></span>Featured work</span>
         <h3><span lang="bn">নিখুঁত বার্তা</span> <span style="font-weight:600;color:var(--muted)">(Nikhut Barta)</span></h3>
@@ -1181,7 +1186,7 @@ dialog.pd[open]{animation:pop .4s var(--ease)}
 <section class="sec about work-bg" id="about" aria-labelledby="about-h">
   <div class="wrap about-grid">
     <div class="about-pic rv">
-      <div class="about-img"><img src="naeem2.jpg" alt="Naeem Hossen (Naeem Insight), IT Executive at Agamir Shomoy" width="640" height="640" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
+      <div class="about-img"><img src="assets/naeem2.jpg" alt="Naeem Hossen (Naeem Insight), IT Executive at Agamir Shomoy" width="640" height="640" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
     </div>
     <div class="rv" style="--d:.1s">
       <p class="kick">About</p>
@@ -1519,13 +1524,13 @@ dialog.pd[open]{animation:pop .4s var(--ease)}
     <div class="gal-grid" id="galleryGrid">
       <figure class="feat">
         <a href="assets/naeemhossen1.jpg" data-lb="1" aria-label="Open photo 1: Naeem Hossen, SEO Expert">
-          <img src="assets/naeemhossen1.jpg" alt="Naeem Hossen, SEO expert and web designer from Manikganj, Bangladesh" title="Naeem Hossen, SEO Expert" width="800" height="1000" loading="lazy" onerror="this.src='naeem.jpg'">
+          <img src="assets/naeemhossen1.jpg" alt="Naeem Hossen, SEO expert and web designer from Manikganj, Bangladesh" title="Naeem Hossen, SEO Expert" width="800" height="1000" loading="lazy" onerror="this.onerror=null;this.src='assets/naeem.jpg'">
         </a>
         <figcaption>Naeem Hossen, SEO Expert</figcaption>
       </figure>
       <figure>
         <a href="assets/naeemhossen2.jpg" data-lb="2" aria-label="Open photo 2: Naeem Hossen, Naeem Insight">
-          <img src="assets/naeemhossen2.jpg" alt="Naeem Hossen of Naeem Insight, digital marketing specialist" title="Naeem Hossen, Naeem Insight" width="800" height="1000" loading="lazy" onerror="this.src='naeem2.jpg'">
+          <img src="assets/naeemhossen2.jpg" alt="Naeem Hossen of Naeem Insight, digital marketing specialist" title="Naeem Hossen, Naeem Insight" width="800" height="1000" loading="lazy" onerror="this.onerror=null;this.src='assets/naeem2.jpg'">
         </a>
         <figcaption>Naeem Hossen, Naeem Insight</figcaption>
       </figure>
@@ -1585,7 +1590,7 @@ dialog.pd[open]{animation:pop .4s var(--ease)}
 <!-- Featured Project Dialog -->
 <dialog class="pd" id="pd" aria-labelledby="pd-title">
   <button type="button" class="pd-close" data-close-dlg aria-label="Close">&times;</button>
-  <img id="pdImg" src="nikhutbarta.jpg" alt="নিখুঁত বার্তা Bangla news portal homepage" width="1600" height="900" loading="lazy" onerror="this.style.display='none'">
+  <img id="pdImg" src="assets/nikhutbarta.jpg" alt="নিখুঁত বার্তা Bangla news portal homepage" width="1600" height="900" loading="lazy" onerror="this.style.display='none'">
   <div class="pd-body">
     <span class="proj-cat"><span lang="bn">প্রযুক্তি ও ডিজিটাল পরিচালনা</span> · Technology &amp; digital operations</span>
     <h2 id="pd-title"><span lang="bn">নিখুঁত বার্তা</span> (Nikhut Barta)</h2>
@@ -1605,7 +1610,7 @@ dialog.pd[open]{animation:pop .4s var(--ease)}
 </dialog>
 
 <!-- Fullscreen Lightbox for Photo Gallery -->
-<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+<dialog class="lb" id="lb" aria-label="Photo viewer">
   <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
   <div class="lb-stage" id="lbStage">
     <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
@@ -1613,13 +1618,13 @@ dialog.pd[open]{animation:pop .4s var(--ease)}
     <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
   </div>
   <div class="lb-cap" id="lbCap"></div>
-</div>
+</dialog>
 
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr-top">
       <div>
-        <a href="#top" class="logo"><span class="logo-mark" aria-hidden="true"><img src="naeemlogo.jpg" alt="" width="36" height="36" loading="lazy" onerror="this.style.display='none'"></span><span>Naeem <span style="color:#2B5FA8">Hossen</span></span></a>
+        <a href="#top" class="logo"><span class="logo-mark" aria-hidden="true"><img src="assets/naeemic.jpg" alt="" width="36" height="36" loading="lazy" onerror="this.style.display='none'"></span><span>Naeem <span style="color:var(--name)">Hossen</span></span></a>
         <p class="about-f">IT Executive at Agamir Shomoy, Head of Technology &amp; Digital Operations at Nikhut Barta, and creator of ToolInsight free online tools.</p>
         <p class="bn" lang="bn">নাঈম হোসেন — ওয়েব ডেভেলপার ও এসইও বিশেষজ্ঞ, মানিকগঞ্জ</p>
       </div>
@@ -1722,7 +1727,7 @@ dialog.pd[open]{animation:pop .4s var(--ease)}
     });
   });
 
-  document.querySelectorAll('dialog').forEach(function(dlg){
+  document.querySelectorAll('dialog:not(.lb)').forEach(function(dlg){
     dlg.querySelectorAll('[data-close-dlg]').forEach(function(closeBtn){
       closeBtn.addEventListener('click', function(){
         if (dlg.close) dlg.close();
@@ -1764,18 +1769,20 @@ dialog.pd[open]{animation:pop .4s var(--ease)}
     }
     function lbOpen(i){
       clearTimeout(hideT);
+      if (lb.showModal && !lb.open) lb.showModal();
       lb.classList.add('on');
       lbLoad(i, true);
       requestAnimationFrame(function(){ requestAnimationFrame(function(){ lb.classList.add('show'); }); });
     }
     function lbClose(){
       lb.classList.remove('show');
-      hideT = setTimeout(function(){ lb.classList.remove('on'); }, 250);
+      hideT = setTimeout(function(){ lb.classList.remove('on'); if (lb.open && lb.close) lb.close(); }, 250);
     }
     glinks.forEach(function(a, i){ a.addEventListener('click', function(e){ e.preventDefault(); lbOpen(i); }); });
     document.getElementById('lbClose').addEventListener('click', lbClose);
     document.getElementById('lbPrev').addEventListener('click', function(e){ e.stopPropagation(); lbLoad(gIdx-1); });
     document.getElementById('lbNext').addEventListener('click', function(e){ e.stopPropagation(); lbLoad(gIdx+1); });
+    lb.addEventListener('cancel', function(e){ e.preventDefault(); lbClose(); });
     lb.addEventListener('click', function(e){ if (e.target === lb || e.target.id === 'lbStage' || e.target.id === 'lbCap') lbClose(); });
     addEventListener('keydown', function(e){
       if (!lb.classList.contains('on')) return;
